@@ -1,5 +1,6 @@
 const express = require('express');
 const axios = require('axios');
+const http = require('http');
 const https = require('https');
 const app = express();
 
@@ -95,9 +96,9 @@ app.post('/getmovie', (req, res) => {
 			: '';
 
 	const reqUrl = encodeURI(
-		`http://www.omdbapi.com/?t=${movieToSearch}&apikey=fe9ff3b532c2aaf25d29ae25a0f26d63`
+		`http://www.omdbapi.com/?t=${movieToSearch}&apikey=86356dfc`
 	);
-	https.get(
+	http.get(
 		reqUrl,
 		responseFromAPI => {
 			let completeResponse = ''
