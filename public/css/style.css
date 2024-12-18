@@ -24,8 +24,13 @@ body {
 
 .chat-container {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
+}
+.chat-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .movie-title {
