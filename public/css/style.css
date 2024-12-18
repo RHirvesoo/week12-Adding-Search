@@ -17,6 +17,12 @@ html {
     text-align: center;
 }
 
+.chat-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 .movie-title {
     text-transform: uppercase;
     transform: translateY(-150px);
@@ -111,12 +117,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.chat-container {
-    position: fixed;
-    bottom: 0;
-    right: 0;
 }
 
 footer {
